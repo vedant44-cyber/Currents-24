@@ -14,3 +14,4 @@ dockerfile
 dockerfile.prod
 Makefile
 README.md
+.DS_Store
