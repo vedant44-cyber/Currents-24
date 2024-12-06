@@ -1,6 +1,6 @@
 FROM node:alpine AS build
 WORKDIR /currents-24
-COPY package.json .     
+COPY ./currents-24/package.json .     
 RUN npm i
 COPY . .
 RUN npm run build   
