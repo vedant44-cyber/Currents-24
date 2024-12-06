@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  client:
+    image: current-24-dev-i
+    build: 
+      dockerfile: Dockerfile.dev
+    container_name: current-24-dev-c
+    volumes:
+      - ./current-24:current-24
+      - node_modules:/current-24/node_modules/
+    ports:    
+      - "8080:8080"
+    environment:
+      - NODE_ENV=development
+volumes:
+  node_modules:
