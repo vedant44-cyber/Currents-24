@@ -4,7 +4,8 @@ import { Sparkles } from 'lucide-react';
 const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-purple-900/20 to-black">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
+     
+      <div className="absolute inset-0 bg-[url('icons/1.jpeg')] bg-cover bg-center "></div>
       
       <div className="relative z-10 text-center px-6">
         <h1 className="text-6xl md:text-8xl font-['Orbitron'] font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 animate-gradient mb-6">
@@ -17,7 +18,7 @@ const Hero = () => {
           </p>
           <Sparkles className="text-pink-500" />
         </div>
-        <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p className="text-gray-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
            Annual National Level Technical Symposium of 
             Department of Electrical and Electronics Engineering
                NIT Trichy
