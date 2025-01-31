@@ -1,6 +1,0 @@
-FROM node:alpine
-WORKDIR /currents-24
-COPY ./currents-24/package.json .
-RUN npm install 
-COPY . .
-CMD [ "npm","start" ]

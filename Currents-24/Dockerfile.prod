@@ -1,9 +1,0 @@
-FROM node:alpine AS build
-WORKDIR /currents-24
-COPY ./currents-24/package.json .     
-RUN npm i
-COPY . .
-RUN npm run build   
-
-FROM nginx
-COPY --from=build /currents-24/build /usr/share/nginx/html
